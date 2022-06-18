@@ -13,7 +13,7 @@ git \
 texlive-xetex
 
 COPY files/main.tex main.tex
-COPY files/main.sh main.sh
+COPY files/make.sh make.sh
 RUN ls
 RUN chmod 777 make.sh
 RUN ls -lah
