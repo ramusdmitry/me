@@ -14,9 +14,7 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
 
 COPY files/main.tex main.tex
 COPY files/make.sh make.sh
-RUN ls
 RUN chmod 777 make.sh
-RUN ls -lah
 CMD ["./make.sh"]
 
 
