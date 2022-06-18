@@ -12,8 +12,9 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
   git \
   texlive-xetex
 
-COPY files/* ../
+COPY files/* ./
 RUN chmod 777 make.sh
+RUN chmod +x /usr/share/fonts/WindowsFonts
 CMD ["./make.sh"]
 
 
