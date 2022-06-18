@@ -1,3 +1,4 @@
+#!/bin/bash
 xelatex -interaction=nonstopmode -halt-on-error main.tex
 cd ..
 # cp files/main.pdf cv.pdf

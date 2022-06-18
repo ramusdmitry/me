@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
   texlive-science \
   cm-super \
   texlive-generic-extra \
-git \
-texlive-xetex
+  git \
+  texlive-xetex
 
 COPY files/main.tex main.tex
 COPY files/make.sh make.sh
