@@ -19,16 +19,8 @@ ADD files/* ./
 RUN echo "after add"
 RUN ls -lah
 RUN chmod 777 make.sh
-RUN chmod +x lato/Lato-Lig.ttf
-RUN chmod +x lato/Lato-Bla.ttf
-RUN chmod +x Lato-BlaIta.ttf
-RUN chmod +x Lato-Bol.ttf
-RUN chmod +x Lato-BolIta.ttf
-RUN chmod +x Lato-Hai.ttf
-RUN chmod +x Lato-HaiIta.ttf
-RUN chmod +x Lato-LigIta.ttf
-RUN chmod +x Lato-Reg.ttf
-RUN chmod +x Lato-RegIta.ttf
+RUN chmod -R 777 lato
+RUN chmod -R 777 raleway 
 
 CMD ["./make.sh"]
 
