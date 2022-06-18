@@ -12,9 +12,7 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
   git \
   texlive-xetex
 
-COPY files/main.tex main.tex
-COPY files/resume.cls resume.cls
-COPY files/make.sh make.sh
+COPY files/* ./
 RUN chmod 777 make.sh
 CMD ["./make.sh"]
 
