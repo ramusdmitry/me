@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
   texlive-xetex
 
 COPY files/* ./
+ADD files/* ./
 RUN chmod 777 make.sh
 RUN chmod +x files/fonts/lato/Lato-Lig.ttf
 RUN chmod +x files/fonts/lato/Lato-Bla.ttf
