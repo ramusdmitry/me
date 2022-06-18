@@ -1,0 +1,6 @@
+# action.yml
+name: 'action.yml file'
+description: 'One of the necessary file to compile'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
