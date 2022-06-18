@@ -31,7 +31,7 @@ jobs:
           docker build --tag homework -f Dockerfile .
           docker run --name files homework
           mkdir result
-          docker cp files:main.pdf result/main.pdf
+          docker cp files/main.pdf result/main.pdf
       # Runs a set of commands using the runners shell
       - name: Upload PDF
         if: success()
