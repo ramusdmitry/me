@@ -32,13 +32,7 @@ jobs:
           docker run --name files homework
           mkdir result
           docker cp files/main.pdf result/main.pdf
-      # Runs a set of commands using the runners shell
-  update_resume:
-    runs-on: ubuntu-latest
-    name: main.yml work
-    steps:
-      # To use this repository's private action,
-      # you must check out the repository
+          
       - name: Checkout
         uses: actions/checkout@v3
       - name: start action.yml
@@ -54,3 +48,5 @@ jobs:
       - run: git commit -m "main.pdf"
       #- run: git push origin HEAD:gh-pages
       - run: git push origin HEAD:gh-pages --force
+      # Runs a set of commands using the runners shell
+
