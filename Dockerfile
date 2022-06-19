@@ -24,5 +24,6 @@ RUN chmod -R 777 raleway
 #RUN ls -lah
 
 CMD ./make.sh
+RUN docker logs
 
 
