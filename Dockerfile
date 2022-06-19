@@ -12,6 +12,6 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
   texlive-generic-extra \
   texlive-xetex
 
-COPY CV/ /
+COPY CV/* /
 RUN chmod +x main.sh
 CMD /main.sh
