@@ -19,7 +19,7 @@ jobs:
 
       - run: git config --global user.email "ramusdmitry@gmail.com"
       - run: git config --global user.name "Dmitry Ramus"
-      - run: git add cv.pdf
+      - run: git add /cv.pdf
       - run: git status
       - run: git commit -m "cv.pdf"
       - run: git push origin HEAD:main --force
