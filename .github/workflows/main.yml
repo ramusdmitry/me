@@ -13,14 +13,15 @@ jobs:
     steps:
       
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: start action.yml
         uses: ./
 
-      - run: ls
       - run: git config --global user.email "ramusdmitry@gmail.com"
-      - run: git config --global user.name "Dmitry Ramus"
-      - run: git add cv/main.pdf
+      - run: git config --global user.name "Dmitriy Ramus"
+      - run: git add resume.pdf
       - run: git status
-      - run: git commit -m "cv.pdf"
+      - run: git commit -m "resume.pdf"
       - run: git push origin HEAD:main --force
+      
+
