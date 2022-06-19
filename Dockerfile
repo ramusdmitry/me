@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
   texlive-xetex
 
 COPY cv/ /
-RUN chmod +x main.sh
-CMD /main.sh
+RUN chmod +x "/main.sh"
+CMD ["/main.sh"]
 
 
