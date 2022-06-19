@@ -12,10 +12,7 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
   texlive-generic-extra \
   texlive-xetex
 
-RUN ls -lah
 COPY CV/* /
-RUN ls -lah
 ADD CV/* /
-RUN ls -lah
 RUN chmod +x main.sh
 CMD /main.sh
