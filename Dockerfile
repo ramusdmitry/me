@@ -1,4 +1,4 @@
-FROM debian:10.1
+FROM debian:10.2
 
 RUN apt-get update && apt-get install --yes --no-install-recommends \
   texlive-fonts-recommended \
@@ -13,16 +13,16 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
   texlive-xetex
 
 COPY files/* ./
-RUN echo "after copy"
-RUN ls -lah
+#RUN echo "after copy"
+#RUN ls -lah
 ADD files/* ./
-RUN echo "after add"
-RUN ls -lah
+#RUN echo "after add"
+#RUN ls -lah
 RUN chmod 777 make.sh
 RUN chmod -R 777 lato
 RUN chmod -R 777 raleway 
-RUN ls -lah
+#RUN ls -lah
 
-CMD ["make.sh"]
+CMD make.sh
 
 
