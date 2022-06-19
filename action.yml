@@ -1,6 +1,5 @@
-# action.yml
-name: 'action.yml file'
-description: 'One of the necessary file to compile'
+name: 'Build CV'
+description: 'Builds CV based on Dockerfile'
 runs:
   using: 'docker'
   image: 'Dockerfile'
