@@ -32,7 +32,7 @@ jobs:
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:
-          target_branch: gh-pages
+          target_branch: pages
           build_dir: resume_result
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
