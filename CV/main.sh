@@ -1,5 +1,5 @@
 cd CV
-xelatex -interaction=nonstopmode -halt-on-error main.tex
+xelatex -interaction=nonstopmode -halt-on-error resume.tex
 cd ..
 echo startcopy
 cp CV/main.pdf resume.pdf

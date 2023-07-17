@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% resume - one page, one column
+% XeLaTeX Template
+% Version 1.1 (09.05.2017)
+%
+% Author: knyte (https://github.com/knyte)
+%
+% Repository: https://github.com/knyte/resume
+%
+% This template is primarily designed for
+% undergraduate EE/CE/CS students applying for
+% industry roles in software engineering
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{resume-knyte}
+ 
+\begin{document}
+
+%%%%%%%%%
+% HEADER
+%%%%%%%%%
+
+% \makeheader{title/name}
+\makeheader{Dmitriy Ramus}
+
+%%%%%%%%%%%%
+% SUBHEADER
+%%%%%%%%%%%%
+
+% argument to environment should match number of sites
+\begin{subheader}{1}
+    % leave third argument empty to specify no hyperlink
+    \site{LINKEDIN}{ramusdmitry}{http://www.linkedin.com/in/ramusdmitry/}
+    \site{TELEGRAM}{@dmiira}{https://t.me/dmiira}
+    \site{GITHUB}{ramusdmitry}{https://github.com/ramusdmitry/}
+    \site{EMAIL}{ramusdmitry@gmail.com}{mailto:ramusdmitry@gmail.com}\\
+\end{subheader}
+
+
+%%%%%%%%%
+% SKILLS
+%%%%%%%%%
+\begin{topic}{Skills}
+    % \skillset{category}{members}
+    \skillset{Go, PostgreSQL, Docker, Kubernetes, Git, Grafana, Prometheus, Kafka, gRPC, C++, Python}
+    \\
+\end{topic}
+
+%%%%%%%%%%%
+% PROJECTS
+%%%%%%%%%%%
+
+\begin{topic}{Projects}
+    % \entry{name}{dates}{tools used}{description}
+    \entry{DevOps и Infrastructure as Code для классической трёхзвенной архитектуры}
+    {Jan 2023 - May 2023}{HSE}
+    {System design and development of a high-load RESTful web application on ReactJS and based on a microservice architecture, consisting of several parts in Go, and automatically builded with Docker via CI/CD GitLab and deployed in a Kubernetes cluster. \\The project also contains modules for collecting and visualizing metrics using Grafana and Prometheus.
+    \newline
+    Using: Go, PostgreSQL, ReactJS, Grafana, Prometheus, Docker, k8s}
+    \entry{Cryptocurrency futures bot}{Apr 2023 - May 2023}{Pet-Project}{Developed a telegram bot with API connection with Binance and Bybit to trade futures based on traders' positions from the leaderboard. Stack: python, go, docker, postgresql}
+    \entry{OCR app for recognition text}
+    {Apr 2020 - May 2020}{Pet-project}
+    {An application uses neural networks to recognize and transcribe text from images. The project employs optical character recognition (OCR) techniques and is implemented using Python, OpenCV, and Tensorflow for neural model. Also used Kotlin for mobile application.}
+\end{topic}
+
+%%%%%%%%%%%%%
+% EXPERIENCE
+%%%%%%%%%%%%%
+\begin{topic}{Experience}
+    % \entry{role}{dates}{team/company}{description}
+    \entry{Intern Software Engineer (Go)}{Apr 2023 - Jul 2023}{Cloud.ru (ex SberCloud), Moscow, Russia}{Developed new microservices on Go to collect resource consumption using PostgreSQL and Kafka. Optimized and tested services for metrics collection, tools: Grafana and Prometheus. Responsibilities included automating build processes (using GitLab CI/CD), deployment and maintenance of microservices in Kubernetes cluster.}
+    \entry{Mobile App Dev Assistant at HSE Mobile Dev School}{Jul 2022 - Aug 2022}
+    {HSE, Moscow, Russia}
+    {Successfully helped students improve code, design projects, and solve technical problems in a mobile development school, which improved the development process and the quality of final products.
+    \\
+    Took active part in the diversity of development initiatives, with regular meetings lectures and driving new proposals across teams. Coached students in creating modern mobile apps and present them in public.}
+\end{topic}
+
+%%%%%%%%%%%%
+% EDUCATION
+%%%%%%%%%%%%
+\begin{topic}{Education}
+    % \entry{institution}{dates}{subtitle}{description}
+    \entry{Bachelor of Computer Science}{2021 Sep - present}{HSE}
+    {8.1/10 GPA
+    \\
+    Completed Courses: Calculus I-II, Linear Algebra, Discrete Math, Probability Theory and Math Statistics, Numerical Methods, Data Structures and Algorithms I-II, Computer Architecture and Operating Systems, Programming at Python and C++, Python for Data Collection \& Analysis}
+
+    \entry{GO Development Course}{Sep 2022 - Dec 2022}
+    {MTS.TETA \& HSE}
+    {Creation and construction of microservice architecture. Patterns and design patterns in Go, how REST and gRPC interact. DevOps methodologies and practices for project deployment. Advanced testing and collection of metrics.}
+    
+\end{topic}
+
+\begin{topic}{Awards}
+    \entry{1st degree winner’s diploma}{Jul 2021 - Aug 2021}
+    {VIII HSE Mobile App Development Summer School}
+    {An Android application was developed for the school which provides functionality for messaging, social media feed, navigation throughout the educational complex, and diary.}
+\end{topic}
+
+\end{document}
