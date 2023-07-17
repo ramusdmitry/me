@@ -28,7 +28,7 @@ jobs:
       - run: git push origin HEAD:main --force
       
       - run: mkdir resume_result
-      - run: ls- A; ls -d CV
+      - run: ls -A; ls -d CV
       
       - run: mv resume.pdf resume_result/resume.pdf
       - run: mv index.html /resume_result/index.html      
