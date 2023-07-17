@@ -19,14 +19,19 @@ jobs:
 
       - run: git config --global user.email "ramusdmitry@gmail.com"
       - run: git config --global user.name "Dmitriy Ramus"
+      
       - run: git add -A
       - run: git status
       - run: git commit -m "resume.pdf"
+      
       - run: git push origin HEAD:pages --force
       - run: git push origin HEAD:main --force
+      
       - run: mkdir resume_result
-      - run: mv ${{ github.workspace }}/resume.pdf ${{ github.workspace }}/resume_result/resume.pdf
-      - run: mv ${{ github.workspace }}/index.html ${{ github.workspace}}/resume_result/index.html      
+      - run: ls- A; ls -d CV
+      
+      - run: mv resume.pdf resume_result/resume.pdf
+      - run: mv index.html /resume_result/index.html      
       
       - name: Publish pdf
         if: success()
